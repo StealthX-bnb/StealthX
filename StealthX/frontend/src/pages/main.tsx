@@ -1,4 +1,3 @@
-import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faArrowRight, faArrowTurnDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
@@ -10,10 +9,7 @@ import { Network } from '../components/network';
 import { Send } from '../components/send';
 import { Withdraw } from '../components/withdraw';
 
-import SendReceive from '../svg/send-receive.svg';
-import Shield from '../svg/shield.svg';
-
-import { stealthAddress, explorer } from '../utils/constants';
+import { stealthAddress, explorer } from '../utils/constants';  // تأكد من مسار الاستيراد الصحيح
 
 import './main.css';
 
@@ -26,36 +22,42 @@ export function Main() {
 
   return (
     <section className="layout">
-      <div className="content">
-        <div className="header-h">
-          <div className="header-item">
+      <div className="header">
+        <div className="header-content">
+          <div className="header-logo">
             <h1 className="text-4xl font-bold text-mint-green-500">StealthX</h1>
           </div>
-          <div className="header-item">
+          <nav className="header-nav">
+            <ul>
+              <li><a href="#explore">Explore</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#blog">Blog</a></li>
+            </ul>
+          </nav>
+          <div className="header-wallet">
             <Connect />
-            <Network />
           </div>
         </div>
+      </div>
 
-        <div className="promo large-block">
-          <h1>
-            Introducing <span className="promo-accent">Anonymous</span> & <span className="promo-accent">Effortless</span>
-            <br /> Transfers on the {chain?.name.split(' ')[0] || 'BNB'} Network
-          </h1>
-
-          <div className="benefits">
-            <div className="item">
-              <img src={Shield} alt="" width={24} />
-              <p>
-                Safeguard Your Transactions with <strong>Untraceable&nbsp;Stealth Addresses</strong>
-              </p>
-            </div>
-            <div className="item">
-              <img src={SendReceive} alt="" width={24} />
-              <p>
-                Send and receive {chain?.nativeCurrency.symbol || 'BNB'}{' '}
-                <strong>privately</strong>
-              </p>
+      <div className="content">
+        <div className="promo-section">
+          <div className="promo-content">
+            <h1 className="promo-title">
+              Experience <span className="promo-highlight design">Seamless</span> and <span className="promo-highlight marketing">Secure</span>
+              <br /> BNB Transactions with Anonymous Transfers
+            </h1>
+            <div className="promo-benefits">
+              <div className="promo-item">
+                <p className="promo-text">
+                  Ensure Complete Privacy with <strong>Untraceable Stealth Addresses</strong>
+                </p>
+              </div>
+              <div className="promo-item">
+                <p className="promo-text">
+                  Conduct BNB Transactions <strong>Privately and Securely</strong>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -107,9 +109,6 @@ export function Main() {
             </div>
           </div>
         </AddressProvider>
-
-        
-      
       </div>
     </section>
   );

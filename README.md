@@ -1,5 +1,10 @@
 
 # StealthX
+## StealthX
+
+![AI Flow Wallet home page](https://github.com/samarabdelhameed/pics/blob/main/pro1.png)
+
+
 
 ## 📝 Project Description
 ## AI StealthX
@@ -12,6 +17,13 @@
 Hey there, privacy enthusiasts and blockchain explorers! Have you ever wished you could send and receive funds without anyone snooping around your business? Well, say hello to StealthX – your personal privacy guardian on the opBNB and BNB Blockchain. We’re tackling the issue of exposing personal info during transactions by introducing stealth addresses. In simple terms, StealthX lets you receive funds on the opBNB and BNB Blockchain without unveiling your real address.
 
 The project draws inspiration from existing privacy-focused blockchains like Monero and tools like Tornado Cash, but aims to bridge the gap between complex and expensive privacy solutions and non-private transfers. It empowers users to maintain their privacy, fostering trust and security in the blockchain industry.
+
+## StealthX home page 
+
+![AI Flow Wallet home page](https://github.com/samarabdelhameed/pics/blob/main/bbm.png
+)
+
+
 
 ### 😎 Idea
 
